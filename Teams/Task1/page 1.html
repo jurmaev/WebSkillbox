@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Title of page</title>
+		<style>
+			/*стили отвечают за оформление элементов (как будет выглядеть тот или иной объект)*/
+			.button {
+				display: inline-flex;
+				color: white;
+				font-family: 'Arial';
+				padding: 10px 20px 10px 20px;
+				text-transform: uppercase;
+				border-radius: 8px;
+				box-shadow: 0px 0px 20px #4466ff;
+				background: linear-gradient(230deg, #ffe000 0%, #40BBBB 50%, #206666 100%);
+				cursor: pointer;
+				user-select: none;
+				font-weight: bold;
+				font-size: 14px;
+			}	
+			.button:hover {
+				background: linear-gradient(180deg, #ffe000 0%, #40BBBB 50%, #206666 100%);
+				box-shadow: 0px 0px 20px #3355ee;
+			}
+			.textContainer {
+				margin-bottom: 16px;
+				margin-top: 100px;
+			}
+			.field {
+				font-size: 24px;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h1>Мои мемуары</h1>
+			<h2>Рождение</h2>
+			<div id="book">
+				<p>
+					Мой день рождения совпал с днем труда - 1 мая!
+					Поэтому я люблю работать )
+				</p>
+				<!-- Сюда нужные новые комментарии -->
+			</div>
+		</div>
+		
+		<!-- Тело документа - то, что видит пользователь (структура) -->
+		<div class="textContainer">
+			<input type="text" class="field" id="field" placeholder="Введите текст"/>
+		</div>
+		<div class="button" onClick="createPost()">Опубликовать комментарий</div>
+		<div class="button" onClick="deletePost()">Удалить последний</div>
+		<div class="button" onClick="deletePost()">Удалить все</div>
+		
+		
+		<!-- Тег script служит для написания программного кода -->
+		<script>
+			// Это функции, написанные на языке JavaScript. Они выполняются браузером.
+			function createPost() {
+				// Получить текст из поля для ввода (value)
+				let inputPost = document.getElementById('field');
+				let post = inputPost.value;
+				// Создать новый пустой параграф в конце списка
+				let book = document.getElementById('book');
+				let newParagraph = document.createElement('p'); // создание нового параграфа (в ОЗУ)
+				book.append(newParagraph);	// добавляем параграф в конец book
+				// Заполнить новый параграф содержимым из поля для ввода
+				newParagraph.innerHTML = post; // в параграф внести содержимое из post
+				// Очистить поле для ввода
+				inputPost.value = '';
+			}
+			
+			function deletePost() {
+				alert('Удалить комментарий!');
+			}
+		</script>		
+	</body>
+</html>
+
+<!--
+	Задача на практике.
+		Создать поле для ввода. 
+		После нажатия на кнопку "Опубликовать комментарий" будет создан новый
+		текст с содержимым, которое ввел человек.
+		
+	Домашняя работа (по уровням):
+		1. Создать и стилизовать кнопку в соответствии с изображением. (1 балл)
+			Рекомендации и требования:
+			- текст должен быть изменяем
+			- изображение (начала проигрывания) найти самостоятельно
+		2. Создать и стилизовать поле для ввода в соответствии с изображением (1 балл)
+		
+		3.* В нашем проекте реализовать функционал удаления последнего комментария и/или всех (1 балл)
+			
+			
+-->

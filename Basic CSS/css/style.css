@@ -1,0 +1,13 @@
+h1 {
+    color: yellow !important; 
+    font-size: 30px;
+    font-style: italic;
+}
+
+.header {
+    color: red;
+}
+
+#header {
+    color: blue;
+}
