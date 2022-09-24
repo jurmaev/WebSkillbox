@@ -1,29 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task1</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        .button {
+            display: inline-flex;
+            text-transform: uppercase;
+            padding: 14px 23px;
+            margin-bottom: 40px;
+            margin-right: 20px;
+            border-radius: 8px;
+            background-color: yellow;
+            box-shadow: 0px 0px 20px orange;
+            background: linear-gradient(90deg, #fbbc00 0%, #fcf800 100%);
+            cursor: pointer;
+            user-select: none;
+            font-family: 'Arial';
+            font-weight: bold;
+            font-size: 1em;
+        }
+
+        .button:hover {
+            box-shadow: 0px 0px 20px orangered;
+            background: linear-gradient(90deg, #d19d00 0%, #ceca00 100%);
+        }
+
+        .input {
+            display: block;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            border-color: rgba(128, 128, 128, 0.359);
+            font-size: 24px;
+        }
+
+        .input:hover {
+            border-color: black;
+        }
+
+        .input:hover::placeholder {
+            color: black;
+        }
+
+        .input-text {
+            display: inline-block;
+        }
+
+        .label {
+            display: block;
+            color: grey;
+        }
+
+        .text {
+            margin: auto;
+
+        }
+
+        .image {
+            margin: 0;
+            margin-right: 10px;
+            height: 1.5em;
+        }
+    </style>
 </head>
+
 <body>
     <div class="button">
-        <div>
-            <img src="play.jpg" alt="Play">
-        </div>
-        <div>
-            Скачать
-        </div>
+        <img src="play.png" alt="" class="image">
+        <p class="text">Слушать</p>
     </div>
     <div>
-        <!-- <div class="input-text">
-            Введите текст
-        </div> -->
         <div>
-            <input class="input" type="text" placeholder="Наведите мышь">
+            <label class="label" for="label">Ввод</label>
+            <input class="input" id="input" type="text" placeholder="Наведите мышь">
         </div>
-        
+        <div class="button" onclick="createPost()">Опубликовать комментарий</div>
+        <div class="button" onclick="deletePost()">Удалить последний комментарий</div>
+        <div class="button" onclick="deleteAllPosts()">Удалить все комментарии</div>
+        <div id="book"></div>
     </div>
+    <script>
+        function createPost() {
+            let inputPost = document.getElementById('input');
+            let post = inputPost.value;
+            let book = document.getElementById('book');
+            let newParagraph = document.createElement('p');
+            book.append(newParagraph);
+            newParagraph.innerHTML = post;
+            inputPost.value = '';
+        }
+
+        function deletePost() {
+            let book = document.getElementById('book');
+            let paragraphs = book.getElementsByTagName('p');
+            book.removeChild(paragraphs[paragraphs.length - 1]);
+        }
+
+        function deleteAllPosts() {
+            let book = document.getElementById('book');
+            book.innerHTML = '';
+        }
+    </script>
 </body>
+
 </html>
