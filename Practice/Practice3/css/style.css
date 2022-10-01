@@ -79,6 +79,7 @@ p {
 
 .body:last-child {
   margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .body .grey-text {
@@ -90,13 +91,16 @@ h2, h3 {
   margin-bottom: 10px;
 }
 
-.items {
+.list {
   padding-left: 15px;
-  padding-bottom: 20px;
+}
+
+.items {
+  margin-bottom: 20px;
 }
 
 .items:last-child {
-  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .image {

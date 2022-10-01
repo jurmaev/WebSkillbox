@@ -49,10 +49,9 @@ body {
   background-color: #3f2aff;
 }
 
-/* .link:last-child {
+.link:last-child {
   margin-right: 0;
-  padding-bottom: 0;
-} */
+}
 
 .container {
   margin: 0 auto;
@@ -115,8 +114,12 @@ h3 {
   color: #333;
 }
 
-.items {
+.list {
   padding-left: 15px;
+}
+
+.items {
+  /* padding-left: 15px; */
   padding-bottom: 20px;
 }
 
