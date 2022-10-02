@@ -49,6 +49,10 @@ body {
   background-color: #3f2aff;
 }
 
+.link:last-child {
+  margin-right: 0;
+}
+
 .container {
   margin: 0 auto;
   padding: 80px 0;
@@ -110,8 +114,11 @@ h3 {
   color: #333;
 }
 
-.items {
+.list {
   padding-left: 15px;
+}
+
+.items {
   padding-bottom: 20px;
 }
 
@@ -139,7 +146,7 @@ figure {
   font-weight: 700;
   font-size: 18px;
   color: #3f2aff;
-  background-image: url("/img/download.png");
+  background-image: url("../img/download.png");
   background-position: left center;
   background-size: 20px 20px;
   background-repeat: no-repeat;
@@ -156,11 +163,11 @@ figure {
 }
 
 .grey-body-background-1 {
-  background-image: url("/img/decorate-1.png");
+  background-image: url("../img/decorate-1.png");
 }
 
 .grey-body-background-2 {
-  background-image: url("/img/decorate-2.png");
+  background-image: url("../img/decorate-2.png");
 }
 
 .link-text {
@@ -194,7 +201,7 @@ figure {
   font-size: 20px;
   line-height: 23px;
   color:  #3f2aff;
-  background-image: url("/img/Arrow\ 1.svg");
+  background-image: url("../img/Arrow\ 1.svg");
   background-position: left center;
   background-repeat: no-repeat;
 }
@@ -203,9 +210,8 @@ figure {
   margin-bottom: 25px;
 }
 
-.list {
+.modules-list {
   display: inline;
-  /* padding-top: 205px; */
   padding-left: 25px;
   list-style-type: none;
 }
@@ -240,20 +246,20 @@ figure {
 }
 
 .card-background-1 {
-  background-image: url(/img/photo-1530435460869-d13625c69bbf\ copy.jpg);
+  background-image: url("../img/photo-1530435460869-d13625c69bbf\ copy.jpg");
 }
 
 .card-background-2 {
   margin: 0;
-  background-image: url(/img/photo-1530435460869-d13625c69bbf\ copy\ \(1\).jpg);
+  background-image: url("../img/photo-1530435460869-d13625c69bbf\ copy\ \(1\).jpg");
 }
 
 .card-background-3 {
-  background-image: url(/img/photo-1530435460869-d13625c69bbf\ copy\ \(2\).jpg);
+  background-image: url("../img/photo-1530435460869-d13625c69bbf\ copy\ \(2\).jpg");
 }
 
 .card-background-4 {
-  background-image: url(/img/photo-1530435460869-d13625c69bbf\ copy\ \(3\).jpg);
+  background-image: url("../img/photo-1530435460869-d13625c69bbf\ copy\ \(3\).jpg");
 }
 
 .list-header {

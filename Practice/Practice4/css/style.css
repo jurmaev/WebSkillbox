@@ -147,7 +147,7 @@ figure {
   font-weight: 700;
   font-size: 18px;
   color: #3f2aff;
-  background-image: url("/img/download.png");
+  background-image: url("../img/download.png");
   background-position: left center;
   background-size: 20px 20px;
   background-repeat: no-repeat;
@@ -164,11 +164,11 @@ figure {
 }
 
 .grey-body-background-1 {
-  background-image: url("/img/decorate-1.png");
+  background-image: url("../img/decorate-1.png");
 }
 
 .grey-body-background-2 {
-  background-image: url("/img/decorate-2.png");
+  background-image: url("../img/decorate-2.png");
 }
 
 .link-text {

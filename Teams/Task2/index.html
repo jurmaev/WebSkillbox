@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Static</h2>
+        <p>
+            Блок располагается в соответствии с нормальным потоком. Свойства top, right, bottom и left не применяются.
+            Значение по умолчанию.
+        </p>
+        <div class="block-red"></div>
+        <div class="block-static"></div>
+        <div class="block-red"></div>
+    </div>
+
+    <div class="container">
+        <h2>Relative</h2>
+        <p>
+            Положение блока рассчитывается в соответствии с нормальным потоком. Затем блок смещается относительно его
+            нормального положения и во всех случаях, включая элементы таблицы, не влияет на положение любых следующих
+            блоков.
+        </p>
+        <div class="block-red"></div>
+        <div class="block-relative"></div>
+        <div class="block-red"></div>
+    </div>
+
+    <div class="container">
+        <h2>Absolute</h2>
+        <p>
+            Положение блока (и, возможно, размер) задается с помощью свойств top, right, bottom и left. Эти свойства
+            определяют явное смещение относительно его содержащего блока. Абсолютно позиционированные блоки полностью
+            удаляется из нормального потока, не влияя на расположение сестринских элементов.
+        </p>
+        <div class="block-red"></div>
+        <div class="block-absolute"></div>
+        <div class="block-red"></div>
+    </div>
+
+    <div class="container">
+        <h2>Sticky</h2>
+        <p>
+            Положение блока рассчитывается в соответствии с нормальным потоком. Затем блок смещается относительно своего
+            ближайшего предка с прокруткой или окна просмотра, если ни у одного из предков нет прокрутки.
+        </p>
+        <div class="block-red"></div>
+        <div class="block-sticky"></div>
+        <div class="block-red"></div>
+    </div>
+    <div class="block-fixed">
+        <h2>Fixed</h2>
+        <p>Фиксированное позиционирование аналогично абсолютному позиционированию, с отличием в том, что для содержащим
+            блоком устанавливается окно просмотра. Такой блок полностью удаляется из потока документа и не имеет позиции
+            относительно какой-либо части документа. Фиксированные блоки не перемещаются при прокрутке документа. В этом
+            отношении они похожи на фиксированные фоновые изображения.</p>
+    </div>
+</body>
+
+</html>

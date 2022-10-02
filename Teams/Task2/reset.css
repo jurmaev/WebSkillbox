@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+html, body {
+    min-height: 100vh; 
+    /* vh означает viewport height. 1vh - 1% от viewport height. То есть когда мы задаем 100vh, то мы обозначаем высоту блока, 
+    которая будет равна 100% высоты окна просмотра */
+    font-size: 18px;
+    line-height: 1px;
+}
+
+button {
+    cursor: pointer;
+}
+
+input, button {
+    -webkit-appearance: none; 
+    /* Это CSS расширение, поддерживаемое браузерным движком WEbKit. 
+    Свойство appearance используется для отображения элемента с помощью
+    использования платформенно-зависимого оформления на основе темы операционной
+    системы пользователя. Работает в браузерах Google Chrome и Apple Safari */
+}

@@ -1,0 +1,79 @@
+h2 {
+    margin: 0;
+    margin-bottom: 20px;
+}
+.container {
+    display: block;
+    margin: 0;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    border: 1px dashed grey;
+    font-family: Arial;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.container:first-child {
+    margin-top: 200px;
+}
+
+.block-red {
+    display: inline-block;
+    padding: 30px;
+    border: 2px solid black;
+    background-color: red;
+}
+
+.block-static {
+    display: inline-block;
+    position: static;
+    /* Не сдвинется на странице */
+    top: 20px;
+    left: 20px;
+    padding: 30px;
+    border: 2px solid black;
+    background-color: green;
+}
+
+.block-relative {
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    padding: 30px;
+    border: 2px solid black;
+    background-color: green;
+}
+
+.block-absolute {
+    display: inline-block;
+    position: absolute;
+    top: 660px;
+    left: 60px;
+    padding: 30px;
+    border: 2px solid black;
+    background-color: green;
+}
+
+.block-sticky {
+    display: inline-block;
+    position: sticky;
+    bottom: 20px;
+    padding: 30px;
+    border: 2px solid black;
+    background-color: green;
+}
+
+.block-fixed {
+    display: inline-block;
+    margin: 0 auto;
+    position: fixed;
+    right: auto;
+    top: 0;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: antiquewhite;
+}
+
