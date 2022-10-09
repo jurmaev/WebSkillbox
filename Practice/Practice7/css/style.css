@@ -1,0 +1,264 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    outline: 1px solid grey;
+}
+
+.section__title {
+    margin: 0;
+    margin-bottom: 20px;
+    text-indent: 40px;
+}
+
+/* header */
+
+.header-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header__logo {
+    margin-right: 40px;
+}
+
+.header__tel {
+    margin-right: auto;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    padding: 14px 45px;
+}
+
+.header__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header-list__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.header__nav {
+    margin-right: auto;
+}
+
+.header__btn {
+    padding: 13px 20px;
+}
+
+.header__btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.header {
+    margin-bottom: 70px;
+}
+
+/* special */
+
+.special__content {
+    display: flex;
+}
+
+.special__item {
+    display: flex;
+    flex-direction: column;
+    width: calc((100% - 24px) / 2);
+}
+
+.special__item:not(:last-child) {
+    margin-right: 24px;
+}
+
+.special__article {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 258px;
+    outline: 1px solid coral;
+    margin-bottom: 24px;
+    padding: 45px 40px;
+}
+
+.special__article:last-child {
+    margin-bottom: 0;
+}
+
+.special__article--right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.special-item__title {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.special-item__text {
+    margin: 0;
+    margin-bottom: 47px;
+}
+
+.special {
+    margin-bottom: 70px;
+}
+
+/* about */
+
+.about__text {
+    width: 888px;
+}
+
+.about {
+    margin-bottom: 70px;
+}
+
+/* sevices */
+
+.services__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.services__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 570px;
+    min-height: 330px;
+    padding: 35px 45px;
+    margin-bottom: 30px;
+    outline: 1px solid coral;
+}
+
+.services__item:not(:nth-child(2n)) {
+    margin-right: 30px;
+}
+
+.services-item-preview__link {
+    margin-bottom: 5px;
+}
+
+.services-item-preview__text {
+    margin: 0;
+}
+
+.services {
+    margin-bottom: 40px;
+}
+
+/* benefits */
+
+.benefits__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.benefits__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 276px;
+    min-height: 276px;
+    padding: 40px 45px;
+    margin-bottom: 22px;
+    outline: 1px solid coral;
+}
+
+.benefits-item__descr {
+    margin: 0;
+}
+
+.benefits__item:not(:nth-child(4n)) {
+    margin-right: 22px;
+}
+
+.benefits {
+    margin-bottom: 48px;
+}
+
+/* accomodation */
+
+.accomodation__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.accomodation__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 45px;
+    width: 374px;
+    min-height: 440px;
+    margin-bottom: 24px;
+    outline: 1px solid coral;
+}
+
+.accomodation__item:not(:nth-child(3n)) {
+    margin-right: 24px;
+}
+
+.accomodation-item__name {
+    margin-bottom: 16px;
+}
+
+.accomodation-item__place {
+    margin-bottom: 20px;
+}
+
+.accomodation-item__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.accomodation-item__btn {
+    padding: 20px 13px;
+}
+
+.accomodation-item__image{
+    padding-bottom: 32px;
+}
