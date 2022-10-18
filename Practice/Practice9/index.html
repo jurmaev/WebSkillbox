@@ -454,7 +454,7 @@
                         </div>
                         <div class="tour-form__input">
                             <label class="tour-form__label">Страна</label>
-                            <select name="city" class="tour-form__select">
+                            <select name="country" class="tour-form__select">
                                 <option value="Страна" disabled selected>Страна</option>
                                 <option value="Австралия">Австралия</option>
                                 <option value="Испания">Испания</option>
@@ -462,15 +462,15 @@
                         </div>
                         <div class="tour-form__input">
                             <label class="tour-form__label">Дата прибытия</label>
-                            <input type="date" class="tour-form__date">
+                            <input type="date" class="tour-form__date" name="date">
                         </div>
                         <div class="tour-form__input">
                             <label class="tour-form__label">Ночей</label>
-                            <input type="number" min="1" class="tour-form__number">
+                            <input type="number" min="1" class="tour-form__number" name="night_count">
                         </div>
                         <div class="tour-form__input">
                             <label class="tour-form__label">Туристы</label>
-                            <input type="number" min="1"  class="tour-form__number" required>
+                            <input type="number" min="1"  class="tour-form__number" name="tourist_count" required>
                         </div>
                         <button class="btn form__btn">Найти</button>
                     </div>
