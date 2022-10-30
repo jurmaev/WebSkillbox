@@ -690,3 +690,7 @@ p {
 .footer__right {
     margin-left: auto;
 }
+
+.burger {
+    display: none;
+}
