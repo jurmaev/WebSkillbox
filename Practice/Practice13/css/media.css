@@ -1,3 +1,385 @@
+:root {
+    --px-12: 12px;
+    --px-24: 24px;
+    --px-30: 30px;
+    --px-20: 20px;
+    --px-40: 40px;
+    --px-60: 60px;
+    --px-45: 45px;
+}
+
+@media (min-width: 2250px) {
+    .container {
+        max-width: 2440px;
+        padding: 0 var(--px-20);
+    }
+
+    .section__title {
+        font-size: 66px;
+        line-height: 80px;
+    }
+
+    .header__img {
+        height: 98px;
+        width: 339px;
+    }
+
+    .header {
+        padding: 25px 0;
+        border-radius: 0 0 48px 48px;
+    }
+
+    .header__link {
+        font-size: 26px;
+    }
+
+    .header__search {
+        width: var(--px-30);
+        height: var(--px-30);
+    }
+
+    .ad-container {
+        min-height: 852px;
+        padding: 120px;
+        border-radius: 48px;
+    }
+
+    .advert__header {
+        max-width: 60%;
+        font-size: 100px;
+        line-height: 115px;
+        margin-bottom: 36px;
+    }
+
+    .advert__descr {
+        max-width: 50%;
+        margin-bottom: auto;
+        font-size: 36px;
+        line-height: var(--px-40);
+    }
+
+    .advert__btn {
+        padding: 36px var(--px-60);
+        font-size: var(--px-32);
+        line-height: var(--px-32);
+    }
+
+    .advert {
+        margin-bottom: 75px;
+    }
+
+    .about__descr {
+        max-width: 70%;
+        font-size: var(--px-24);
+        line-height: var(--px-45);
+    }
+
+    .card__header {
+        font-size: var(--px-32);
+        line-height: var(--px-45);
+    }
+
+    .card__descr {
+        max-width: 75%;
+        font-size: var(--px-24);
+        line-height: var(--px-45);
+    }
+
+    .left-card__descr {
+        width: 65%;
+        font-size: var(--px-24);
+        line-height: var(--px-45);
+    }
+
+    .left-card__btn {
+        padding: var(--px-30) 56px;
+        font-size: var(--px-24);
+        line-height: var(--px-30);
+    }
+
+    .work__steps {
+        max-width: 40%;
+        font-size: var(--px-24);
+        line-height: var(--px-32);
+    }
+
+    .work__header--small {
+        font-size: var(--px-32);
+        line-height: 43px;
+        margin-bottom: var(--px-12);
+    }
+
+    .work__text {
+        margin-bottom: var(--px-24);
+        font-size: var(--px-24);
+        line-height: 43px;
+    }
+
+    .work__button,
+    .work__button--transparent {
+        padding: var(--px-30) 58px;
+        font-size: var(--px-24);
+        line-height: var(--px-30);
+    }
+
+    .faq__item {
+        padding: var(--px-45) 0;
+    }
+
+    .faq__text {
+        font-size: var(--px-32);
+        line-height: 43px;
+    }
+
+    .faq__plus {
+        width: 75px;
+        height: 75px;
+    }
+
+    .footer__logo {
+        width: 339px;
+        height: 98px;
+    }
+
+    .footer__link {
+        font-size: var(--px-24);
+        line-height: var(--px-40);
+    }
+
+    .footer__icon {
+        width: 75px;
+        height: 75px;
+    }
+
+    .footer__center {
+        width: 30%;
+    }
+
+    .footer__input,
+    .footer__textarea {
+        padding: var(--px-20) var(--px-30);
+        font-size: var(--px-20);
+        line-height: var(--px-30);
+    }
+
+    .footer__textarea {
+        height: 200px;
+    }
+
+    .footer__btn {
+        padding: 25px 65px;
+        font-size: var(--px-20);
+        line-height: 25px;
+    }
+
+    .form__check {
+        font-size: 18px;
+        line-height: var(--px-40);
+    }
+
+    .footer__right {
+        max-width: 20%;
+    }
+
+    .footer__text {
+        max-width: none;
+        font-size: var(--px-20);
+        line-height: 38px;
+    }
+}
+
+@media (min-width: 3200px) {
+    .container {
+        max-width: 3700px;
+        padding: 0 var(--px-30);
+    }
+
+    .section__title {
+        font-size: 80px;
+        line-height: 100px;
+    }
+
+    .header__img {
+        height: 120px;
+        width: 460px;
+    }
+
+    .header {
+        padding: 35px 0;
+        border-radius: 0 0 64px 64px;
+        margin-bottom: 100px;
+    }
+
+    .header__link {
+        font-size: 34px;
+    }
+
+    .header__search {
+        width: var(--px-45);
+        height: var(--px-45);
+    }
+
+    .ad-container {
+        min-height: 1100px;
+        padding: 160px;
+        border-radius: 64px;
+    }
+
+    .advert__header {
+        max-width: 60%;
+        font-size: 120px;
+        line-height: 135px;
+        margin-bottom: 52px;
+    }
+
+    .advert__descr {
+        max-width: 50%;
+        margin-bottom: auto;
+        font-size: 48px;
+        line-height: 50px;
+    }
+
+    .advert__btn {
+        padding: 48px 80px;
+        font-size: 48px;
+        line-height: 56px;
+        border-radius: var(--px-32);
+    }
+
+    .advert {
+        margin-bottom: 100px;
+    }
+
+    .about__descr {
+        max-width: 70%;
+        font-size: 36px;
+        line-height: var(--px-60);
+        margin-bottom: 75px;
+    }
+
+    .card__header {
+        font-size: 48px;
+        line-height: var(--px-60);
+    }
+
+    .card__descr {
+        max-width: 75%;
+        font-size: var(--px-32);
+        line-height: 56px;
+    }
+
+    .left-card {
+        padding: 75px;
+    }
+
+    .left-card__descr {
+        width: 65%;
+        font-size: var(--px-32);
+        line-height: 56px;
+    }
+
+    .left-card__btn {
+        padding: var(--px-45) 84px;
+        font-size: var(--px-32);
+        line-height: var(--px-40);
+    }
+
+    .work__steps {
+        max-width: 40%;
+        font-size: var(--px-32);
+        line-height: 43px;
+    }
+
+    .work__header--small {
+        font-size: 48px;
+        line-height: 50px;
+        margin-bottom: 18px;
+    }
+
+    .work__text {
+        margin-bottom: 36px;
+        font-size: var(--px-32);
+        line-height: 56px;
+    }
+
+    .work__button,
+    .work__button--transparent {
+        padding: var(--px-45) 80px;
+        border-radius: var(--px-24);
+        font-size: var(--px-32);
+        line-height: var(--px-45);
+    }
+
+    .faq__item {
+        padding: var(--px-60) 0;
+    }
+
+    .faq__text {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .faq__plus {
+        width: 100px;
+        height: 100px;
+    }
+
+    .footer__logo {
+        height: 120px;
+        width: 460px;
+    }
+
+    .footer__link {
+        font-size: var(--px-32);
+        line-height: var(--px-60);
+    }
+
+    .footer__icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .footer__center {
+        width: 30%;
+    }
+
+    .footer__input,
+    .footer__textarea {
+        padding: var(--px-45) 50px;
+        font-size: var(--px-30);
+        line-height: var(--px-45);
+    }
+
+    .footer__textarea {
+        height: 300px;
+    }
+
+    .footer__btn {
+        padding: var(--px-40) 80px;
+        font-size: var(--px-30);
+        line-height: 38px;
+    }
+
+    .form__check {
+        font-size: var(--px-24);
+        line-height: var(--px-40);
+    }
+
+    .footer__right {
+        max-width: 20%;
+    }
+
+    .footer__text {
+        max-width: none;
+        font-size: var(--px-30);
+        line-height: 58px;
+    }
+
+    .footer__left {
+        margin-right: 500px;
+    }
+}
+
 @media (max-width: 1600px) {
     .work__left {
         margin-right: auto;
@@ -38,19 +420,19 @@
     }
 
     .advert__header {
-        margin-bottom: 16px;
-        font-size: 60px;
+        margin-bottom: var(--px-16);
+        font-size: var(--px-60);
         line-height: 73px;
     }
 
     .advert__descr {
-        font-size: 20px;
-        line-height: 24px;
-        margin-bottom: 60px;
+        font-size: var(--px-20);
+        line-height: var(--px-24);
+        margin-bottom: var(--px-60);
     }
 
     .about__descr {
-        margin-bottom: 60px;
+        margin-bottom: var(--px-60);
     }
 
     .cards {
@@ -77,7 +459,7 @@
     }
 
     .work__steps {
-        margin-bottom: 45px;
+        margin-bottom: var(--px-45);
     }
 
     .work__left,
@@ -95,8 +477,8 @@
     }
 
     .faq__text {
-        font-size: 20px;
-        line-height: 32px;
+        font-size: var(--px-20);
+        line-height: var(--px-32);
         margin-right: 10px;
     }
 
@@ -105,17 +487,17 @@
     }
 
     .footer__btn {
-        margin-right: 20px;
+        margin-right: var(--px-20);
         padding: 19px 38px;
         font-weight: 700;
-        font-size: 16px;
-        line-height: 20px;
+        font-size: var(--px-16);
+        line-height: var(--px-20);
     }
 
     .burger {
         display: block;
         position: relative;
-        width: 30px;
+        width: var(--px-30);
         height: 23px;
         border: none;
         background-color: var(--white);
@@ -126,7 +508,7 @@
         display: block;
         position: absolute;
         left: 50%;
-        width: 30px;
+        width: var(--px-30);
         height: 3px;
         background-color: var(--black);
         transform: translate(-50%);
@@ -158,7 +540,7 @@
 
     .header {
         padding: 26px 0;
-        margin-bottom: 40px;
+        margin-bottom: var(--px-40);
     }
 
     .advert {
@@ -198,8 +580,8 @@
     }
 
     .ad-container {
-        padding: 160px 40px;
-        border-radius: 24px;
+        padding: 160px var(--px-40);
+        border-radius: var(--px-24);
     }
 
     .advert__header {
@@ -214,13 +596,13 @@
 
     .cards__left {
         min-height: 650px;
-        border-radius: 24px;
+        border-radius: var(--px-24);
         background-image: url(../img/about768.jpg);
     }
 
     .left-card {
-        padding: 34px 40px;
-        border-radius: 24px;
+        padding: 34px var(--px-40);
+        border-radius: var(--px-24);
     }
 
     .left-card__descr {
@@ -231,11 +613,11 @@
     .card__img {
         width: 114px;
         height: 99px;
-        margin-right: 16px;
+        margin-right: var(--px-16);
     }
 
     .card {
-        padding: 35px 46px 35px 40px;
+        padding: 35px 46px 35px var(--px-40);
     }
 
     .work__steps {
@@ -255,7 +637,7 @@
     .work__right {
         min-height: 284px;
         margin-bottom: 38px;
-        border-radius: 24px;
+        border-radius: var(--px-24);
         background-image: url(../img/work768.jpg);
     }
 
@@ -283,7 +665,7 @@
     }
 
     .header {
-        margin-bottom: 30px;
+        margin-bottom: var(--px-30);
     }
 
     .header__img {
@@ -298,36 +680,36 @@
     .advert__header {
         margin-bottom: 6px;
         text-align: center;
-        font-size: 20px;
-        line-height: 24px;
+        font-size: var(--px-20);
+        line-height: var(--px-24);
     }
 
     .advert__descr {
         margin-bottom: var(--gap-32);
         text-align: center;
-        font-size: 12px;
+        font-size: var(--px-12);
         line-height: 15px;
     }
 
     .ad-container {
-        padding: 60px 22px;
-        border-radius: 16px;
+        padding: var(--px-60) 22px;
+        border-radius: var(--px-16);
     }
 
     .advert__btn {
         align-self: center;
         padding: 13px 28px;
         border-radius: 8px;
-        font-size: 12px;
+        font-size: var(--px-12);
         line-height: 15px;
     }
 
     .advert {
-        margin-bottom: 60px;
+        margin-bottom: var(--px-60);
     }
 
     .section__title {
-        font-size: 24px;
+        font-size: var(--px-24);
         line-height: 29px;
     }
 
@@ -343,7 +725,7 @@
         background-size: contain;
         margin-right: 0;
         margin-bottom: 232px;
-        border-radius: 16px;
+        border-radius: var(--px-16);
         background-image: url(../img/about320.jpg);
     }
 
@@ -357,7 +739,7 @@
 
     .left-card__descr {
         width: 100%;
-        margin-bottom: 12px;
+        margin-bottom: var(--px-12);
         color: var(--black);
         font-weight: 400;
         font-size: 14px;
@@ -366,11 +748,11 @@
 
     .left-card__btn {
         align-self: flex-start;
-        padding: 12px 44px;
+        padding: var(--px-12) 44px;
         outline: 2px solid #FF9900;
         border-radius: 8px;
         background-color: transparent;
-        font-size: 12px;
+        font-size: var(--px-12);
         line-height: 15px;
         color: var(--orange);
     }
@@ -397,7 +779,7 @@
 
     .card__img {
         margin-right: 0;
-        margin-bottom: 12px;
+        margin-bottom: var(--px-12);
         width: 64px;
         height: 49px;
     }
@@ -407,19 +789,19 @@
     }
 
     .work__header {
-        margin-bottom: 20px;
+        margin-bottom: var(--px-20);
     }
 
     .work__right {
-        margin-bottom: 16px;
+        margin-bottom: var(--px-16);
         min-height: 160px;
-        border-radius: 16px;
+        border-radius: var(--px-16);
         background-image: url(../img/work320.jpg);
         background-size: contain;
     }
 
     .work__steps {
-        margin-bottom: 16px;
+        margin-bottom: var(--px-16);
         font-size: 14px;
         line-height: 17px;
     }
@@ -427,7 +809,7 @@
     .work__header--small {
         font-weight: 500;
         font-size: 18px;
-        line-height: 32px;
+        line-height: var(--px-32);
     }
 
     .work__text {
@@ -441,49 +823,49 @@
 
     .work__button {
         margin-right: 10px;
-        padding: 12px 44px;
+        padding: var(--px-12) 44px;
         border-radius: 8px;
-        font-size: 12px;
+        font-size: var(--px-12);
         line-height: 15px;
     }
 
     .work__button--transparent {
-        padding: 12px 32px;
+        padding: var(--px-12) var(--px-32);
         border-radius: 8px;
-        font-size: 12px;
+        font-size: var(--px-12);
         line-height: 15px;
     }
 
     .work {
-        margin-bottom: 60px;
+        margin-bottom: var(--px-60);
     }
 
     .faq__header {
-        margin-bottom: 16px;
+        margin-bottom: var(--px-16);
     }
 
     .faq__text {
-        margin-right: 20px;
+        margin-right: var(--px-20);
         font-weight: 500;
         font-size: 14px;
-        line-height: 24px;
+        line-height: var(--px-24);
     }
 
     .faq__plus {
-        width: 30px;
-        height: 30px;
+        width: var(--px-30);
+        height: var(--px-30);
     }
 
     .faq {
-        margin-bottom: 60px;
+        margin-bottom: var(--px-60);
     }
 
     .footer {
-        padding: 32px 0;
+        padding: var(--px-32) 0;
     }
 
     .footer__header {
-        margin-bottom: 20px;
+        margin-bottom: var(--px-20);
     }
 
     .footer__center {
@@ -494,9 +876,9 @@
 
     .footer__input,
     .footer__textarea {
-        padding: 14px 20px;
+        padding: 14px var(--px-20);
     }
-    
+
     .footer__textarea {
         margin-bottom: 25px;
     }
@@ -508,22 +890,22 @@
 
     .footer__btn {
         margin-right: 0;
-        margin-bottom: 12px;
-        padding: 12px 28px;
+        margin-bottom: var(--px-12);
+        padding: var(--px-12) 28px;
         border-radius: 8px;
-        font-size: 12px;
+        font-size: var(--px-12);
         line-height: 15px;
     }
 
     .footer__logo {
         width: 131px;
         height: 42px;
-        margin-bottom: 16px;
+        margin-bottom: var(--px-16);
     }
 
     .footer__icon {
-        width: 40px;
-        height: 40px;
+        width: var(--px-40);
+        height: var(--px-40);
     }
 
     .footer__container {
@@ -537,13 +919,13 @@
     .footer__center::after {
         content: "";
         position: absolute;
-        bottom: -16px;
+        bottom: - var(--px-16);
         width: 100%;
         height: 1px;
         background-color: var(--grey-4);
     }
 
     .footer__icon--link:not(:last-child) {
-        margin-right: 16px;
+        margin-right: var(--px-16);
     }
 }
