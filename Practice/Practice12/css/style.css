@@ -196,6 +196,7 @@ p {
 }
 
 .ad-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     padding: 100px 80px;
@@ -203,6 +204,23 @@ p {
     background-image: url(../img/ad.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+}
+.dots {
+    position: absolute;
+    display: flex;
+    bottom: 30px;
+    left: calc(50% - (3 * 15px + 2 * 20px) / 2);
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--grey-1);
+}
+
+.dot:not(:last-child) {
+    margin-right: 20px;
 }
 
 .advert__header {

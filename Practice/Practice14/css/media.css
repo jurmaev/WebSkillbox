@@ -33,9 +33,27 @@
         font-size: 26px;
     }
 
-    .header__search {
-        width: var(--px-30);
-        height: var(--px-30);
+    .search {
+        right: 20px;
+    }
+
+    .search--active {
+        max-width: 900px;
+        padding: 25px 32px;
+        border-radius: 32px;
+    }
+
+    .search__btn,
+    .close__btn,
+    .search__btn svg,
+    .close__btn svg{
+        width: 35px;
+        height: 35px;
+    }
+
+    .search__input {
+        font-size: 24px;
+        line-height: 30px;
     }
 
     .ad-container {
@@ -122,7 +140,7 @@
         line-height: var(--px-30);
     }
 
-    .faq__item {
+    .ui-accordion .ui-accordion-header {
         padding: var(--px-45) 0;
     }
 
@@ -214,9 +232,34 @@
         font-size: 34px;
     }
 
-    .header__search {
+    .search {
+        right: 30px;
+    }
+
+    .search--active {
+        padding: 30px 40px;
+        max-width: 1300px;
+        border-radius: 40px;
+    }
+
+    .search__btn,
+    .close__btn,
+    .search__btn svg,
+    .close__btn svg {
         width: var(--px-45);
         height: var(--px-45);
+    }
+
+    .search__btn--active {
+        margin-right: 30px;
+    }
+
+    .search__input {
+        padding-bottom: 10px;
+        border-bottom-width: 2px;
+        margin-right: 25px;
+        font-size: 34px;
+        line-height: 40px;
     }
 
     .ad-container {
@@ -310,7 +353,7 @@
         line-height: var(--px-45);
     }
 
-    .faq__item {
+    .ui-accordion .ui-accordion-header {
         padding: var(--px-60) 0;
     }
 
@@ -411,12 +454,86 @@
     }
 
     .header__nav {
-        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin: 0;
+        width: 420px;
+        min-width: 420px;
+        height: 100vh;
+        z-index: 1000;
+        padding: 170px 0 0 50px;
+        box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+        border-radius: 0px 0px 32px 32px;
+        background-color: var(--white);
+        overflow-y: auto;
+        visibility: hidden;
+        transform: translate(-120%);
+        transition: visibility 0.5s ease-in-out, transform 0.5s ease-in-out;
+    }
+
+    .header__link {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .header__link:not(:last-child) {
+        margin-bottom: 60px;
+    }
+
+    .header__nav--active {
+        visibility: visible;
+        transform: none;
+    }
+
+    .burger--active {
+        z-index: 1001;
+        overflow: hidden;
+    }
+
+    .burger--active .burger__line {
+        background-color: var(--orange-dark);
+        transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+
+    .burger--active .burger__line:nth-child(2) {
+        transform: translateX(-10px);
+    }
+
+    .burger--active .burger__line:last-child {
+        transform: translateX(-3px);
+    }
+
+    .search {
+        right: 10px;
+    }
+
+    .search--active {
+        width: 60%;
+    }
+
+    .stop-scroll {
+        overflow: hidden;
     }
 
     .ad-container {
         padding: 160px 77px;
+    }
+
+    .swiper-slide:nth-child(3n + 2) {
         background-image: url(../img/ad1024.jpg);
+    }
+
+    .swiper-slide:nth-child(3n) {
+        background-image: url(../img/ad1024-1.jpg);
+    }
+
+    .swiper-slide:nth-child(3n + 1) {
+        background-image: url(../img/ad1024-2.jpg);
     }
 
     .advert__header {
@@ -467,9 +584,28 @@
         width: calc((100% - 50px) / 2);
     }
 
+    .work__left {
+        min-height: 689px;
+    }
+
     .work__right {
         min-height: 689px;
+    }
+
+    .work__container:nth-child(3) .work__right {
         background-image: url(../img/work1024.jpg);
+    }
+
+    .work__container:nth-child(4) .work__right {
+        background-image: url(../img/work1024-1.jpg);
+    }
+
+    .work__container:nth-child(5) .work__right {
+        background-image: url(../img/work1024-2.jpg);
+    }
+
+    .work__container:nth-child(6) .work__right {
+        background-image: url(../img/work1024-3.jpg);
     }
 
     .work {
@@ -565,7 +701,7 @@
     }
 
     .work__text {
-        margin-bottom: 25px;
+        margin-bottom: auto;
     }
 }
 
@@ -579,10 +715,36 @@
         padding: 11px 0;
     }
 
+    .header__nav {
+        padding: 152px 0 0 50px;
+    }
+
+    .swiper {
+        border-radius: var(--px-24);
+    }
+
     .ad-container {
         padding: 160px var(--px-40);
-        border-radius: var(--px-24);
+    }
+
+    .swiper-slide:nth-child(3n + 2) {
         background-image: url(../img/ad768.jpg);
+    }
+
+    .swiper-slide:nth-child(3n) {
+        background-image: url(../img/ad768-1.jpg);
+    }
+
+    .swiper-slide:nth-child(3n + 1) {
+        background-image: url(../img/ad768-2.jpg);
+    }
+
+    .search {
+        right: 5px;
+    }
+
+    .search--active {
+        width: 80%;
     }
 
     .advert__header {
@@ -631,6 +793,14 @@
         flex-direction: column-reverse;
     }
 
+    .work__left {
+        min-height: initial;
+    }
+
+    .work__text {
+        margin-bottom: 25px;
+    }
+
     .work__left,
     .work__right {
         width: 100%;
@@ -640,7 +810,22 @@
         min-height: 284px;
         margin-bottom: 38px;
         border-radius: var(--px-24);
+    }
+
+    .work__container:nth-child(3) .work__right {
         background-image: url(../img/work768.jpg);
+    }
+
+    .work__container:nth-child(4) .work__right {
+        background-image: url(../img/work768-1.jpg);
+    }
+
+    .work__container:nth-child(5) .work__right {
+        background-image: url(../img/work768-2.jpg);
+    }
+
+    .work__container:nth-child(6) .work__right {
+        background-image: url(../img/work768-3.jpg);
     }
 
     .work {
@@ -668,6 +853,7 @@
 
     .header {
         margin-bottom: var(--px-30);
+        padding: 17px 0;
     }
 
     .header__img {
@@ -675,8 +861,35 @@
         height: 35px;
     }
 
-    .header {
-        padding: 17px 0;
+    .header__nav {
+        width: 100%;
+        padding: 78px 0 100px 15px;
+    }
+
+    .header__link:not(:last-child) {
+        margin-bottom: var(--px-32);
+    }
+
+    .header__link {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .search--active {
+        max-width: initial;
+        padding: 21px 15px;
+    }
+
+    .search--active {
+        width: 100%;
+        border-radius: 0px 0px 24px 24px;
+    }
+
+    .search__input {
+        padding-bottom: 6px;
+        margin-right: 0;
+        font-size: 16px;
+        line-height: 20px;
     }
 
     .advert__header {
@@ -693,11 +906,40 @@
         line-height: 15px;
     }
 
-    .ad-container {
+    .swiper {
         min-height: 308px;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        bottom: 15px;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        margin: 0 10px;
+        background: var(--grey-1);
+    }
+
+    .ad-container {
         padding: var(--px-60) 22px;
         border-radius: var(--px-16);
+    }
+
+    .swiper-slide:nth-child(3n + 2) {
         background-image: url(../img/ad320.jpg);
+    }
+
+    .swiper-slide:nth-child(3n) {
+        background-image: url(../img/ad320-1.jpg);
+    }
+
+    .swiper-slide:nth-child(3n + 1) {
+        background-image: url(../img/ad320-2.jpg);
     }
 
     .dots {
@@ -809,8 +1051,23 @@
         margin-bottom: var(--px-16);
         min-height: 160px;
         border-radius: var(--px-16);
-        background-image: url(../img/work320.jpg);
         background-size: contain;
+    }
+
+    .work__container:nth-child(3) .work__right {
+        background-image: url(../img/work320.jpg);
+    }
+
+    .work__container:nth-child(4) .work__right {
+        background-image: url(../img/work320-1.jpg);
+    }
+
+    .work__container:nth-child(5) .work__right {
+        background-image: url(../img/work320-2.jpg);
+    }
+
+    .work__container:nth-child(6) .work__right {
+        background-image: url(../img/work320-3.jpg);
     }
 
     .work__steps {
@@ -855,6 +1112,11 @@
 
     .faq__header {
         margin-bottom: var(--px-16);
+    }
+
+    .faq__content {
+        font-size: 14px;
+        line-height: 28px;
     }
 
     .faq__text {
