@@ -41,6 +41,9 @@
     }
 
     function createFaqClickEvents() {
+        jQuery(document).ready(function ($) {
+            $('.faq__item').attr('tabindex', 0);
+        });
         const faqItems = document.querySelectorAll('.faq__item');
         faqItems.forEach(element => {
             element.addEventListener('click', () => {
