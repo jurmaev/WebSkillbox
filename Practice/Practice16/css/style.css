@@ -457,7 +457,6 @@ p {
 
 .left-card__btn:focus,
 .left-card__btn:hover {
-    color: var(--white);
     background-color: var(--orange);
     outline: none;
 }
