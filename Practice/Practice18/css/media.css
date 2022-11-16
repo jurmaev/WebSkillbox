@@ -1,0 +1,249 @@
+@media(min-width: 1600px) {
+    .container-fluid {
+        max-width: 1560px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container-fluid {
+        max-width: 690px;
+    }
+
+    .course__header {
+        font-size: 50px;
+    }
+
+    .course__img {
+        min-height: 342px;
+        background-image: url(../img/course-1024.svg);
+    }
+
+    .course {
+        padding: 130px 0;
+    }
+
+    .benefits__header {
+        line-height: 40px;
+    }
+
+    .benefits__card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .benefits__pic {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .mentors__header {
+        line-height: 40px;
+    }
+
+    .mentors__name {
+        line-height: 27px;
+    }
+
+    .mentors__descr {
+        line-height: 24px;
+    }
+
+    .mentors__card {
+        margin-bottom: 30px;
+    }
+
+    .mentors {
+        padding-bottom: 50px;
+    }
+
+    .courses__header {
+        line-height: 40px;
+    }
+
+    .courses__time {
+        top: 13px;
+        right: 10px;
+    }
+
+    /* .card__header {
+        line-height: 27px;
+    }
+
+    .courses__text {
+        line-height: 27px;
+    } */
+
+    .courses__info {
+        min-height: 376px;
+    }
+
+    .courses__btn {
+        padding: 20px 55px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container-fluid {
+        max-width: 510px;
+    }
+
+    .logo__container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .course {
+        padding: 77px 0 135px;
+        background: radial-gradient(49% 49% at 67.78% 84.57%, #555681 0%, #2E2B44 100%);
+    }
+
+    .course__img {
+        display: none;
+        background-image: none;
+    }
+
+    .course__header {
+        line-height: 50px;
+    }
+
+    .course__text {
+        line-height: 27px;
+    }
+
+    .benefits {
+        padding-bottom: 60px;
+    }
+
+    .benefits__upper {
+        align-items: flex-start;
+    }
+
+    .card__header {
+        line-height: 130%;
+    }
+
+    .courses__btn {
+        padding: 20px 48px;
+    }
+
+    .courses__info{
+        min-height: 473px;
+    }
+}
+
+@media (max-width: 575.5px) {
+    .course__header {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .benefits__header {
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header__nav {
+        display: none;
+    }
+
+    .header {
+        padding: 32px 0;
+    }
+
+    .logo__container {
+        /* padding: 32px 0; */
+        margin-bottom: 0;
+    }
+
+    .header__logo {
+        margin-right: auto;
+    }
+
+    .course__header {
+        margin-bottom: 15px;
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .course__text {
+        margin-bottom: 50px;
+        font-size: 16px;
+        line-height: 130%;
+    }
+
+    .course__btn {
+        padding: 20px 53px
+    }
+
+    .course {
+        padding: 50px 0;
+    }
+
+    .benefits__img {
+        display: none;
+    }
+
+    .benefits {
+        padding: 50px 0;
+    }
+
+    .benefits__header {
+        margin-bottom: 15px;
+        font-size: 20px;
+        line-height: 130%;
+    }
+
+    .benefits__card {
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .benefits__pic {
+        margin-right: 30px;
+        margin-bottom: 0px;
+    }
+
+    .mentors {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    .mentors__header {
+        font-size: 20px;
+        line-height: 100%;
+    }
+
+    .courses {
+        padding: 50px 0;
+    }
+
+    .courses__header {
+        font-size: 20px;
+        line-height: 100%;
+    }
+
+    .courses__text{
+        line-height: 150%;
+    }
+
+    .course__btn{
+        padding: 20px 55px;
+    }
+
+    .courses__info{
+        min-height: 473px;
+    }
+
+    .burger__container{
+        display: flex;
+    }
+
+    .burger{
+        margin-left: auto;
+        background: transparent;
+    }
+}

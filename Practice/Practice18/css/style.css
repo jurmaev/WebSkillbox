@@ -1,0 +1,301 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #fff;
+    /* padding: 20px; */
+    font-family: 'Montserrat', Open-Sans;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container-fluid {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+.btn {
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.row,
+.container-fluid {
+    --bs-gutter-x: 30px;
+}
+
+.burger__container {
+    display: none;
+}
+
+/* header */
+
+.header {
+    padding: 30px 0;
+    background-color: #3F2AFF;
+}
+
+.header__link {
+    font-size: 18px;
+    line-height: 21px;
+    color: white;
+}
+
+.header__logo {
+    /* width: 94px; */
+    height: 21px;
+}
+
+.header__nav {
+    display: flex;
+    justify-self: flex-end;
+    justify-content: space-between;
+}
+
+/* course */
+
+.course {
+    /* min-height: 620px; */
+    padding: 15px 0;
+    background: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
+    ;
+}
+
+.course__img {
+    min-height: 593px;
+    background-image: url(../img/course.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.course__header {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 100%;
+    color: white;
+}
+
+.course__text {
+    margin-bottom: 70px;
+    font-size: 18px;
+    line-height: 150%;
+    color: white;
+}
+
+.course__container {
+    align-items: center;
+}
+
+.course__btn {
+    padding: 24px 75px;
+    background-color: #3F2AFF;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+}
+
+/* benefits */
+
+.benefits {
+    padding: 80px 0;
+}
+
+.benefits__img {
+    margin-right: 30px;
+}
+
+.benefits__upper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.benefits__header {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    color: #2E2B44;
+}
+
+.benefits__text {
+    font-size: 16px;
+    line-height: 150%;
+    color: #666;
+}
+
+.benefits__card {
+    display: flex;
+    align-items: center;
+}
+
+.benefits__pic {
+    margin-right: 30px;
+}
+
+.benefits__descr {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    color: #666;
+}
+
+/* mentors */
+
+.mentors {
+    padding: 80px 0;
+    background-color: #212133;
+}
+
+.mentors__header {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    color: #fff;
+}
+
+.mentors__name {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: #fff;
+
+}
+
+.mentors__descr {
+    font-size: 16px;
+    line-height: 150%;
+    color: #85859B;
+}
+
+.mentors__card {
+    border-radius: 20px 20px 0px 0px;
+}
+
+.mentors__img {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+/* courses */
+
+.courses {
+    padding: 80px 0;
+}
+
+.courses__card {
+    position: relative;
+    min-height: 480px;
+    /* height: 100%; */
+    margin-bottom: 30px;
+    border-radius: 20px;
+    background-color: #EDF0F9;
+}
+
+.courses__header {
+    margin-bottom: 30px;
+    font-size: 40px;
+    line-height: 100%;
+    color: #212133
+}
+
+.card__header {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: #212133;
+}
+
+.courses__btn {
+    /* margin-top: 20px;     */
+    align-self: flex-start;
+    padding: 20px 59px;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    background-color: #3F2AFF;
+}
+
+.courses__img {
+    width: 100%;
+}
+
+.courses__text {
+    margin-bottom: auto;
+    font-size: 16px;
+    line-height: 150%;
+    color: #666;
+}
+
+.courses__info {
+    min-height: 300px;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+
+    padding: 30px;
+}
+
+/* footer */
+.footer__socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3px;
+    padding: 28px 0;
+    background-color: #2E2B44;
+}
+
+.footer__link:not(:last-child) {
+    margin-right: 30px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 13px;
+    line-height: 15px;
+    color: #2E2B44;
+}
+
+.time__text {
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+}
+
+.courses__time {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 10px;
+    right: 5px;
+}
+
+.courses__clock {
+    margin-right: 7px;
+}
