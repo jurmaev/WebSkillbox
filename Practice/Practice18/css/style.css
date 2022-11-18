@@ -10,7 +10,6 @@ html {
 
 body {
     background-color: #fff;
-    /* padding: 20px; */
     font-family: 'Montserrat', Open-Sans;
 }
 
@@ -20,7 +19,7 @@ a {
 }
 
 .container-fluid {
-    max-width: 1110px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
