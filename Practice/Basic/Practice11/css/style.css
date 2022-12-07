@@ -344,16 +344,23 @@ img {
 }
 
 .special-item__link {
+    display: flex;
+    align-items: center;
     align-self: flex-start;
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
     color: var(--btn-hover);
-    background-image: url('../img/right-arrow.svg');
-    background-position: right center;
-    background-repeat: no-repeat;
-    padding-right: 15px;
     transition: color 0.3s ease-in-out;
+}
+
+.special-item__link img {
+    padding-left: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.special-item__link:hover img{
+    transform: translateX(11px);
 }
 
 .special-item__link:active {
@@ -469,6 +476,14 @@ img {
 
 .services-item-preview__img {
     margin-left: 10px;
+}
+
+.services-item-preview__link .services-item-preview__img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.services-item-preview__link:hover .services-item-preview__img {
+    transform: translateX(11px);
 }
 
 .services-item-preview__text {
