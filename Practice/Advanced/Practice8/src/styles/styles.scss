@@ -1,0 +1,632 @@
+@import 'fonts';
+@import 'vars';
+@import 'mixins';
+
+html {
+    font-family: $primaryFont;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: $backgroundColor;
+    // scroll-behavior: smooth;
+
+    // &::-webkit-scrollbar {
+    //     display: none;
+    //     width: 0;
+    //     opacity: 0;
+    // }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+.container {
+    max-width: 1320px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, outline 0.3s ease-in-out;
+}
+
+.btn:focus {
+    outline: 3px solid $orangeColorDark;
+}
+
+.btn:hover {
+    outline: none;
+    background-color: $orangeColorDarker;
+}
+
+.btn:active {
+    outline: none;
+    background-color: $orangeColorDark;
+}
+
+// header
+
+.header {
+    padding: 24px 0;
+    background-color: $backgroundColor;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        // justify-content: space-between;
+    }
+
+    &__item {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: $whiteColor;
+        transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+        &:not(:last-child) {
+            margin-right: 79px;
+        }
+
+        &:focus {
+            color: $whiteColor;
+            background-color: $orangeColorDarker;
+        }
+
+        &:hover {
+            color: $orangeColor;
+            background-color: transparent;
+        }
+
+        &:active {
+            color: $orangeColorDark;
+            background-color: transparent
+        }
+    }
+
+    &__logo {
+        margin-right: 140px;
+    }
+
+    &__nav {
+        margin-right: auto;
+    }
+}
+
+// hero
+
+.hero {
+    padding: 41px 0 68px;
+
+    &__container {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 2fr repeat(2, 1fr);
+        grid-template-rows: 25px 300px 257px;
+        gap: 30px;
+        width: 100%;
+        max-height: 630px;
+    }
+
+    &__item {
+        &:nth-child(1) {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            grid-column: 1 / 2;
+            grid-row: 1 / 4;
+            padding: 60px;
+            color: $whiteColor;
+            background: url("./images/hero-1.jpg") no-repeat;
+            background-size: cover;
+        }
+
+        &:nth-child(2) {
+            grid-column: 2 / 4;
+            //   font-family: $secondary-font;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 25px;
+            //   color: $black-color;
+        }
+
+        &:nth-child(3) {
+            grid-column: 2 / 4;
+        }
+
+        // img {
+        //   object-fit: cover;
+        // }
+    }
+
+    &__badge {
+        @include badge(15px, 15px);
+    }
+
+    &__subtitle {
+        // display: block;
+        font-family: $secondaryFont;
+        ;
+        margin-bottom: 3px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    &__title {
+        // font-family: $secondary-font;
+        // margin: 0;
+        margin-bottom: 19px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 104%;
+    }
+
+    &__img {
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    &__btn {
+        @include orangeButton;
+    }
+}
+
+// about
+
+.about {
+    padding: 30px 0;
+    background-color: $backgroundColor;
+    color: $whiteColor;
+
+    &__container {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    &__header {
+        margin: 0;
+        margin-bottom: 5px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 31px;
+    }
+
+    &__descr {
+        // margin: 0;
+        font-family: $secondaryFont;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    &__img {
+        margin-bottom: 25px;
+    }
+
+    &__subscribe {
+        display: block;
+        margin-bottom: 16px;
+        font-size: 24px;
+        line-height: 22px;
+    }
+
+    &__input {
+        width: 474px;
+        margin-right: 30px;
+        padding: 15px 0 15px 23px;
+        border: none;
+        color: $whiteColor;
+        font-size: 16px;
+        line-height: 19px;
+        background-color: $backgroundLight;
+        font-family: $secondaryFont;
+
+        transition: outline 0.3s ease-in-out;
+
+        &::placeholder {
+            font-size: 16px;
+            line-height: 19px;
+            color: $greyColorLight;
+            transition: color 0.3s ease-in-out;
+        }
+
+        &:focus {
+            outline: 1px solid $orangeColor;
+        }
+
+        &:hover {
+            outline: none;
+
+            &::placeholder {
+                outline: none;
+                color: $orangeColor;
+            }
+
+        }
+    }
+
+    &__form {
+        display: flex;
+        align-items: center
+    }
+
+    &__btn {
+        @include orangeButton;
+        align-self: initial;
+    }
+}
+
+// projects
+
+.projects {
+    padding: 68px 0;
+    color: $backgroundColor;
+
+    &__title {
+        margin-bottom: 12px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 31px;
+    }
+
+    &__container {
+        display: grid;
+        width: 100%;
+        grid-template-rows: repeat(2, 300px);
+        // grid-template-columns: repeat(3, 190px) repeat(2, 300px);
+        grid-template-columns: repeat(3, 1fr) repeat(2, 1fr);
+        gap: 30px;
+        grid-auto-flow: row;
+    }
+
+    &__item {
+        position: relative;
+
+        &--large {
+            display: flex;
+            flex-direction: column;
+            padding: 26px 0 30px 30px;
+            // grid-column: span 3;
+            color: $whiteColor;
+
+            & .projects__title {
+                max-width: 293px;
+                margin-bottom: 6px;
+                line-height: 24px;
+            }
+
+            & .projects__date {
+                margin-bottom: 2px;
+                color: $whiteColor;
+
+                & svg path {
+                    fill: $whiteColor;
+                }
+            }
+
+            & .projects__descr {
+                max-width: 293px;
+            }
+        }
+
+        &:nth-child(1),
+        &:nth-child(2) {
+            .projects__descr {
+                & span{
+                    display: block;
+                }
+            }
+        }
+        &:nth-child(3) {
+            .projects__descr{
+                & span{
+                    display: none;
+                }
+            }
+        }
+        &:nth-child(4) {
+            grid-column: 4 / 6;
+            background: url(./images/projects-4.jpg);
+            background-size: cover;
+        }
+
+        &:nth-child(5) {
+            grid-column: 1 / 4;
+            background: url(./images/projects-5.jpg);
+            background-size: cover;
+        }
+    }
+
+    &__btn {
+        align-self: flex-start;
+        margin-top: auto;
+        padding: 15px 22px;
+        background-color: transparent;
+        outline: 3px solid $orangeColor;
+        color: $whiteColor;
+
+        &:focus {
+            background-color: $orangeColorDarker;
+        }
+
+        &:hover {
+            outline: none;
+            background-color: $orangeColor;
+        }
+
+        &:active {
+            outline: none;
+            background-color: $orangeColorDark
+        }
+    }
+
+    &__badge {
+        @include badge(7px, 7px);
+    }
+
+    &__img {
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 18px;
+    }
+
+    &__descr {
+        margin-bottom: 13px;
+        font-size: 16px;
+        line-height: 22px;
+        font-family: $secondaryFont;
+    }
+
+    &__date {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        line-height: 22px;
+        color: $greyColor;
+        font-family: $secondaryFont;
+
+        & svg {
+            margin-right: 5px;
+        }
+    }
+}
+
+// contacts
+
+.contacts {
+    padding-bottom: 69px;
+
+    &__container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 460px;
+        gap: 30px;
+        grid-auto-flow: row;
+    }
+
+    &__title {
+        margin-bottom: 22px;
+    }
+
+    &__info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 410px;
+        height: 100%;
+        padding: 175px 50px 150px 60px;
+        color: $whiteColor;
+        background-color: rgba(32, 32, 32, 0.85);
+    }
+
+    &__studio {
+        margin-bottom: 5px;
+        font-size: 24px;
+        line-height: 22px;
+    }
+
+    &__address {
+        margin-bottom: 3px;
+        color: $greyColorLight;
+        font-family: $secondaryFont;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    &__tel {
+        display: flex;
+        align-items: center;
+        color: $orangeColor;
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    &__subtitle {
+        margin-bottom: 5px;
+        font-size: 24px;
+        line-height: 22px;
+    }
+
+    &__text {
+        margin-bottom: 14px;
+        color: $greyColor;
+        font-family: $secondaryFont;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__input,
+    &__textarea {
+        margin-bottom: 20px;
+        border: none;
+        padding: 15px 0 15px 23px;
+        background-color: #E9E9E9;
+        font-size: 16px;
+        line-height: 19px;
+        color: $backgroundColor;
+        font-family: $secondaryFont;
+
+        transition: outline 0.3s ease-in-out;
+
+        &::placeholder {
+            font-size: 16px;
+            line-height: 19px;
+            color: $greyColor;
+            transition: color 0.3s ease-in-out;
+        }
+
+        &:focus {
+            outline: 1px solid $orangeColor;
+        }
+
+        &:hover {
+            outline: none;
+
+            &::placeholder {
+                outline: none;
+                color: $orangeColor;
+            }
+
+        }
+    }
+
+    &__textarea {
+        // margin-bottom: 0;
+        padding-bottom: 0;
+        height: 150px;
+        resize: none;
+    }
+
+    &__btn {
+        // margin-top: auto;
+        @include orangeButton;
+
+        &--close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            justify-content: center;
+            padding: 5px;
+            border-radius: 50%;
+            background-color: $greyColor;
+        }
+    }
+
+    &__left{
+        position: relative;
+    }
+}
+
+.footer {
+    padding: 24px 0 16px;
+    background-color: $backgroundColor;
+    color: $greyColorLight;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        // justify-content: space-between;
+    }
+
+    &__left,
+    &__center,
+    &__right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__left {
+        align-items: flex-start;
+        margin-right: 177px;
+    }
+
+    &__center {
+        max-width: 361px;
+        margin-right: auto;
+    }
+
+    &__icon {
+        cursor: pointer;
+
+        & path {
+            fill: $greyColorLight;
+            transition: fill 0.3s ease-in-out;
+        }
+
+        &:focus path {
+            fill: $orangeColorDarker;
+        }
+
+        &:hover path {
+            fill: $orangeColor;
+        }
+
+        &:active path {
+            fill: $orangeColorDark;
+        }
+
+        &:first-child {
+            margin-right: 20px;
+        }
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+    }
+
+    &__img {
+        margin-bottom: 7px;
+    }
+
+    &__copyright {
+        color: #E9E9E9;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    &__text {
+        font-family: $secondaryFont;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    &__more {
+        margin-bottom: 8px;
+        font-family: $secondaryFont;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+
+}
+
+@import 'media';

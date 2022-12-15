@@ -1,0 +1,24 @@
+body {
+  font-family: sans-serif;
+  background: cyan;
+}
+body h1 {
+  color: #00cccc;
+}
+
+.block__elem {
+  color: red;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 10px 25px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+}
+
+.container-fluid {
+  padding: 10px 25px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+}/*# sourceMappingURL=style.css.map */
