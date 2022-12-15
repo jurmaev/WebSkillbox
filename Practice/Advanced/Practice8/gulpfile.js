@@ -3,7 +3,6 @@ const concat = require('gulp-concat');
 const htmlMin = require('gulp-htmlmin');
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
-// const svgSprite = require('gulp-svg-sprite');
 const image = require('gulp-image');
 const uglify = require('gulp-uglify-es').default;
 const babel = require('gulp-babel');
@@ -56,18 +55,6 @@ const htmlMinify = () => {
         .pipe(gulpIf(isBuild, browserSync.stream()))
 };
 
-// const svgSprites = () => {
-//     return src('src/img/svg/**/*.svg')
-//         .pipe(svgSprite({
-//             mode: {
-//                 stack: {
-//                     sprite: '../sprite.svg'
-//                 }
-//             }
-//         }))
-//         .pipe(dest('dist/images'))
-// }
-
 const images = () => {
     return src([
         'src/img/**/*.jpg',
@@ -112,7 +99,6 @@ watch([
     'src/img/**/*.png',
     'src/img/*.svg'
 ], images);
-// watch('src/img/svg/**/*.svg', svgSprites);
 watch('src/js/**/*.js', scripts);
 watch('src/resources/**', resources);
 
